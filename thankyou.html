@@ -1,0 +1,71 @@
+<html>
+<head><style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg6 {
+  /* The image used */
+  background-image: url("image/bg6.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-shadow: 3px 2px red;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #66A550;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+</style></head>
+<title>TimeUP</title>
+<body>
+	<div class="bg6">
+	<div class="centered">
+
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Is Up..!!</h1>
+<h1>Your Are Logged Out From The Test.</h1>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank You</h1></center>
+<br>
+<div class="container">
+<button class="btn" type="button" onclick="window.location='logout.php';"><b>Finish Test</b></button></div>
+</div>
+</div>
+</body>
+<html>
