@@ -270,6 +270,7 @@ CREATE TABLE `quiz` (
   
 `tag` varchar(100) NOT NULL,
   
+
 `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -279,7 +280,7 @@ CREATE TABLE `quiz` (
 
 
 
-INSERT INTO `quiz` (`eid`, `title`, `sahi`, `wrong`, `total`, `time`, `intro`, `tag`, `date`) VALUES
+INSERT INTO `quiz` (`eid`, `title`, `sahi`, `wrong`, `total`, `time`, `intro`, `tag`,`date`) VALUES
 ('558920ff906b8', 'Linux : File Managment', 2, 0, 2, 5, '', 'linux', '2019-04-23 09:03:59'),
 ('558921841f1ec', 'Numerical Ability', 1, 0, 5, 5, '', 'Numerical', '2019-03-23 09:06:12'),
 ('5589222f16b93', 'Coding', 2, 0, 2, 5, '', 'c++', '2019-03-23 09:09:03'),
@@ -316,6 +317,7 @@ CREATE TABLE `user` (
   
 `mob` bigint(20) NOT NULL,
   
+`newuser` int(11) NOT NULL,
 `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -324,8 +326,8 @@ CREATE TABLE `user` (
 
 
 
-INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VALUES 
-('Kaveri', 'F', 'MSRIT', 'kaveri@gmail.com', 8884837757, 'kaveri');
+INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`,`newuser`, `password`) VALUES 
+('Kaveri', 'F', 'MSRIT', 'kaveri@gmail.com', 8884837757,0, 'kaveri');
 
 
 ALTER TABLE `admin`
