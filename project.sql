@@ -1,7 +1,7 @@
-
+DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
   
-`admin_id` int(11) NOT NULL,
+`admin_id` int(11)  primary key NOT NULL,
   
 `email` varchar(50) NOT NULL,
   
@@ -20,7 +20,7 @@ INSERT INTO `admin` (`admin_id`, `email`, `password`) VALUES
 
 
 
-
+DROP TABLE IF EXISTS `answer`;
 CREATE TABLE `answer` (
   
 `qid` text NOT NULL,
@@ -55,7 +55,7 @@ INSERT INTO `answer` (`qid`, `ansid`) VALUES
 
 
 
-
+DROP TABLE IF EXISTS `feedback`;
 
 CREATE TABLE `feedback` (
   
@@ -90,7 +90,7 @@ INSERT INTO `feedback` (`id`, `name`, `email`, `subject`, `feedback`, `date`, `t
 
 
 
-
+DROP TABLE IF EXISTS `history`;
 CREATE TABLE `history` (
   
 `email` varchar(50) NOT NULL,
@@ -122,7 +122,7 @@ INSERT INTO `history` (`email`, `eid`, `score`, `level`, `sahi`, `wrong`, `date`
 ('sunnygkp10@gmail.com', '5589222f16b93', 1, 2, 1, 1, '2015-06-24 03:22:38');
 
 
-
+DROP TABLE IF EXISTS `options`;
 
 CREATE TABLE `options` (
   
@@ -210,7 +210,7 @@ INSERT INTO `options` (`qid`, `option`, `optionid`) VALUES
 
 
 
-
+DROP TABLE IF EXISTS `questions`;
 CREATE TABLE `questions` (
   
 `eid` text NOT NULL,
@@ -252,7 +252,7 @@ INSERT INTO `questions` (`eid`, `qid`, `qns`, `choice`, `sn`) VALUES
 
 
 
-
+DROP TABLE IF EXISTS `quiz`;
 CREATE TABLE `quiz` (
   
 `eid` text NOT NULL,
@@ -289,7 +289,7 @@ INSERT INTO `quiz` (`eid`, `title`, `sahi`, `wrong`, `total`, `time`, `intro`, `
 ('5589741f9ed52', 'Linux :vi Editor', 2, 0, 5, 10, '', 'linux', '2019-03-23 14:58:39');
 
 
-
+DROP TABLE IF EXISTS `rank`;
 
 CREATE TABLE `rank` (
   `email` varchar(50) NOT NULL,
@@ -305,7 +305,7 @@ INSERT INTO `rank` (`email`, `score`, `time`) VALUES
 
 
 
-
+DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `name` varchar(50) NOT NULL,
 
@@ -313,7 +313,7 @@ CREATE TABLE `user` (
   
 `college` varchar(100) NOT NULL,
   
-`email` varchar(50) NOT NULL,
+`email` varchar(50) primary key NOT NULL,
   
 `mob` bigint(20) NOT NULL,
   
@@ -327,22 +327,16 @@ CREATE TABLE `user` (
 
 
 INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VALUES 
-<<<<<<< HEAD
+
 ('Kaveri', 'F', 'MSRIT', 'kaveri@gmail.com', 8884837757, 'kaveri');
-=======
-('Kaveri', 'F', 'MSRIT', 'kaveri@gmail.com', 8884837757,'kaveri');
->>>>>>> cea31dc3b27c942bc2b484a3a36c266605e23c43
-
-
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`admin_id`);
 
 
 
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`email`);
+
 
 
 
 ALTER TABLE `admin`
   MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+
