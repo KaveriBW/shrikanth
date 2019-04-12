@@ -327,7 +327,11 @@ CREATE TABLE `user` (
 
 
 INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VALUES 
+<<<<<<< HEAD
 ('Kaveri', 'F', 'MSRIT', 'kaveri@gmail.com', 8884837757, 'kaveri');
+=======
+('Kaveri', 'F', 'MSRIT', 'kaveri@gmail.com', 8884837757,'kaveri');
+>>>>>>> cea31dc3b27c942bc2b484a3a36c266605e23c43
 
 
 ALTER TABLE `admin`
