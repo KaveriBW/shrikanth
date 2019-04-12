@@ -1,5 +1,5 @@
 <?php
-include_once 'dbConnection.php';
+include_once 'database.php';
 $ref=@$_GET['q'];
 $name = $_POST['name'];
 $email = $_POST['email'];

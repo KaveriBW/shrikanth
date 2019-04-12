@@ -1,5 +1,5 @@
 <?php
-include_once 'dbConnection.php';
+include_once 'database.php';
 session_start();
 $email=$_SESSION['email'];
 //delete feedback

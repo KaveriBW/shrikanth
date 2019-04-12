@@ -29,7 +29,7 @@
 </div>
 <div class="col-md-4">
 <?php
- include_once 'dbConnection.php';
+ include_once 'database.php';
 session_start();
   if((!isset($_SESSION['email']))){
 echo '<a href="#" class="pull-right sub1 btn title3" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Signin</a>&nbsp;';}

@@ -37,7 +37,7 @@ $(function () {
 <div class="col-lg-6">
 <span class="logo">Test Your Skill</span></div>
 <?php
- include_once 'dbConnection.php';
+ include_once 'database.php';
 session_start();
 $email=$_SESSION['email'];
   if(!(isset($_SESSION['email']))){
@@ -48,7 +48,7 @@ else
 {
 $name = $_SESSION['name'];;
 
-include_once 'dbConnection.php';
+include_once 'database.php';
 echo '<span class="pull-right top title1" ><span class="log1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hello,</span> <a href="account.php" class="log log1">'.$name.'</a>&nbsp;|&nbsp;<a href="logout.php?q=account.php" class="log"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;Signout</button></a></span>';
 }?>
 
