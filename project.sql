@@ -317,7 +317,7 @@ CREATE TABLE `user` (
   
 `mob` bigint(20) NOT NULL,
   
-`newuser` int(11) NOT NULL,
+
 `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -326,8 +326,8 @@ CREATE TABLE `user` (
 
 
 
-INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`,`newuser`, `password`) VALUES 
-('Kaveri', 'F', 'MSRIT', 'kaveri@gmail.com', 8884837757,0, 'kaveri');
+INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VALUES 
+('Kaveri', 'F', 'MSRIT', 'kaveri@gmail.com', 8884837757,'kaveri');
 
 
 ALTER TABLE `admin`
